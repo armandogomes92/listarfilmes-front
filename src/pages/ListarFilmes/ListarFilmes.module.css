@@ -1,0 +1,9 @@
+.table {
+    text-align: center;
+    align-items: center;
+}
+
+.tdButtons {
+    display: flex;
+    justify-content: space-around;
+}

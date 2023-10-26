@@ -1,0 +1,20 @@
+.submit {
+    background-color: #0e3fa9;
+    color: #ffaa02;
+    border: 1px solid #ffaa02;
+    font-weight: 600;
+}
+
+.excluir {
+    background-color: rgb(160, 0, 0);
+    color: #ffaa02;
+    border: 1px solid #ffaa02;
+    font-weight: 600;
+}
+
+.alterar {
+    background-color: #ffaa02;
+    color: #0e3fa9;
+    border: 1px solid #0e3fa9;
+    font-weight: 600;
+}
