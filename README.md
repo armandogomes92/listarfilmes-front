@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Movie CRUD App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React que permite criar, ler, atualizar e excluir filmes em uma lista de filmes.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone este repositório em sua máquina local:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/armandogomes92/listarfilmes-front.git
+   ```
 
-### `npm test`
+2. Navegue até o diretório do projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   cd nome-do-repositorio
+   ```
 
-### `npm run build`
+3. Instale as dependências usando o npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Executando o Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciar o servidor de desenvolvimento e visualizar o projeto em seu navegador, execute o seguinte comando:
 
-### `npm run eject`
+Antes de iniciar o projeto, vá no caminho src/service/filmes e genero e mude a url para o localhost do backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Isso iniciará o aplicativo em [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Funcionalidades
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O aplicativo oferece as seguintes funcionalidades:
+Crud
+- **Adicionar Filme:** Você pode adicionar um novo filme à lista preenchendo um formulário.
+- **Listar Filmes:** Todos os filmes na lista são exibidos na página inicial.
+- **Editar Filme:** Você pode editar as informações de um filme existente.
+- **Excluir Filme:** Remove um filme da lista.
 
-## Learn More
+Redux
+- **Adicionar lista de Filme:** Você pode adicionar um novo filme à lista preenchendo um formulário.
+- **Pegar um objeto para alterar:** Todos os filmes na lista são exibidos na página inicial.
+- **Alugar um filme:** Você pode editar as informações de um filme existente.
+- **Devolver Filme:** Remove um filme da lista.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  Obs: Fiz a estrutura de alugar no redux para mostrar a utilização
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estrutura do Projeto
 
-### Code Splitting
+A estrutura do projeto é organizada da seguinte forma:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `src/` - Contém o código-fonte do aplicativo React.
+  - `components/` - Componentes React reutilizáveis.
+  - `pages/` - Paginas acessadas pelo roteamento.
+  - `redux` - autoexplicativo
+  - `services/` - Requisições HTTP
+  - `data/` - Dados de exemplo ou simulação de uma API.
+  - `App.js` - O componente raiz do aplicativo.
+  - `index.js` - Arquivo de inicialização do React.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Não pegava em React desde 2018 :P**
